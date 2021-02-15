@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>more-kakao</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body id="more-body">
+    <div id="status-bar">
+      <div class="status-bar_column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar_column">
+        <span>12:03</span>
+      </div>
+      <div class="status-bar_column">
+        <span>50%</span>
+        <i class="fas fa-battery-half fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="screen-header screen-header_find">
+      <h1>More</h1>
+      <div class="screen-header-icons">
+        <a href="# "><i class="fas fa-search fa-lg"></i></a>
+        <a href="#"><i class="fas fa-music fa-lg"></i></a>
+
+        <div class="cog-notifi"></div>
+        <a href="setting.html"> <i class="fas fa-cog fa-lg"></i></a>
+        <a href="index.html"><i class="fas fa-sign-out-alt fa-lg"></i></a>
+      </div>
+    </header>
+
+    <main class="main-screen main-screen_more">
+      <div class="user-component user-component_more">
+        <div class="user-component_column">
+          <img src="image/mepic.png" class="user-component_avatar" alt="" />
+          <div class="user-component_text">
+            <h4 class="user-component_title">JEHEN</h4>
+            <h6 class="user-component_subtitle">
+              +82 0182638182
+              <div class="neukkimpyo">!</div>
+            </h6>
+          </div>
+        </div>
+        <div class="user-component_column">
+          <i class="far fa-comment-alt"></i>
+        </div>
+      </div>
+      <div class="icon-row">
+        <div class="icon-row-icon">
+          <i class="far fa-calendar-alt"></i>
+          <span>Calender</span>
+        </div>
+        <div class="icon-row-icon">
+          <i class="fas fa-archive"></i>
+          <span>Talk Drive</span>
+        </div>
+        <div class="icon-row-icon">
+          <i class="far fa-smile-wink"></i>
+          <span>Emoticons</span>
+        </div>
+        <div class="icon-row-icon">
+          <i class="fas fa-brush"></i>
+          <span>Themes</span>
+        </div>
+      </div>
+      <div class="icon-row icon-row2">
+        <div class="icon-row-icon">
+          <i class="far fa-calendar-alt"></i>
+          <span>Calender</span>
+        </div>
+        <div class="icon-row-icon">
+          <i class="fas fa-archive"></i>
+          <span>Talk Drive</span>
+        </div>
+        <!-- <div class="icon-row-icon">
+          <i class="far fa-smile-wink"></i>
+          <span>Emoticons</span>
+        </div>
+        <div class="icon-row-icon">
+          <i class="fas fa-brush"></i>
+          <span>Themes</span>
+        </div> -->
+      </div>
+
+      <div class="suggestion">
+        <h4 class="suggestion-title">Suggestions</h4>
+        <div class="suggestion-icons">
+          <div class="suggestion-icon">
+            <img
+              class="suggestion-icon_img"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAk1BMVEX54AD///8AAAD11gDSsQv42wPeuwDv5sL22QT43QHmxADm1qb74gDqyQDz2gD/6ADgyQAuKQCrmQD9+/Tx0QAPDQBmXADWwACcjAAoJABZUADXswD8+vH179nuzQDz69HStD/gzYzbxG/q3bH59efRsTPPqgDdx3nWu1Hm16vVtjjgzITs4bzXu0rl1Z3ZwGTPrht4svRbAAAEwElEQVR4nO2c21LbShBFxxpLjHR0seU7AmGCL4QEk///usxYtqEOTtSpEjXqrr2eeNSq3dM9Lduo4J3ZvFzkijv5opzPPlipy1/jMi/S1PfzdUCaFnk5/my4tH6+n60zrOPyf4arkSA/R1qMVh8Nb5UsP0eqbt8NJQpeFJ3hSqSgU1ydDEcyBa3iqDFcFr6f5Msols5wnEuN0IaYj61hKTdCG2IZqJngCF2IMzWXHKENca5KyRHaEEu1EG64UPzXpb8j3Q8AAAAAAAAAAAAAAAAAAAAA4ImwO3yrXMckUVckxrfMVfTwpiuG2rfMVfRw0BUw9AQMYQhD/8AQhjD0DwxhCEP/wBCGMPQPDGEIQ//AEIYw9A8MYQhD/8AQhjD0DwxhCEP/wBCGMPQPDGEIQ//AEIYw9A8MYQhD/8DwH9jB0A8wpDMRb7ippBs+VH397VpXhjeRdMOfvf39YVeGh6SfPyLtznBfSzd8nko33OrYt8xVOjO8G0o3vO/pwO/O8CaSbvjY03HYneHbtK+Gu+//tfCTIjh50f0cFkrXSQvRD4qh3Sz62UqV0S2YiJShvXf31bCVakMxfMx6egxV3PYvWfSOIjh47WujUXELYfaNIjip+tpoWhXD6IliaOd9T49hK2Z4RzH8kfW10bQRT58pgoOh7usxbCNMDhTB+x4fwxY0bVYcErZFWtOKdK25GhI7Keci3U1kF2mYkG7d7kLD1NDsSH3mgW2RxtkbKcI923Gvq3uS4ZBrJw2JET5FhmmR6iEtwi3XPhMme5Kg7TM8DWO9I20V7iUbS0FlItKd291neBrG9QtJcPAtMyFLQz18IAluuEZookfZEYb1mia42WmWw9D2UdKF1DbSmmeEuiKthc0s5BihoX1UMXBrk+YYYZjRXl0cb6QcIwzrLWmxHwwmdqlgGGE4pXaZwT4xDGehFaRtFLbNuL2QnWE4Jd5lLGuObcYmSBZ8jBiewrAml2gzCrkJmmxLbTKDwa8puyt3rJNn2s7r2Cfs2kyoK9KnvQ1P/GrUNlHiXdRhVwrbR3kZGnoTdV8PqtnVqDIJ7eXokTd3mWEmqIztM1TBw3EScjMMrSJxr3+qjOHWZiyxcSlSlgp7HeV3CJX7Wg1RcbObshQ8K762Cd79qjmWqCNuFFvO4t225thlGmJCoU5eM5sgzwjVRfH1L4rrhGUbveC+qGd09sfXNJN1plkLXhTX1xXvXtgLngs1W1/bojbbjHeJNpwVP6d4v6v5J+j401m82U0lJOi4XqiHaiojQcc1xX2l+Q76z3wq1M06cYJCEnScFU8p3gybHiNH8L1Qj+8WH6umx0gSVM2mYVyKm9fIVqhdl4QJOkVbqPX2YKfgsceIE2wUTX0MUKbgaSU2Miv0xPEsig3wiC1U5ydX8Kgo2k8dB6PvRwAAAAAAAAAAAEST+36ALyZXi9T3M3wp6UKVwg1LNS98P8SXUszVLJccYprPVFBKDrEoAxWMBYeY5mNrGCzlhlgsA2cYjKSGmI6CxnAVy1RM49XJMLhVEhVTdRucDUUqngRPhsFqVMhyTIvRKvhoaDtqLsgxLfLlWexiGIxL6yhBMrV+5Tj4bBgEs3m54L9M5YtyPvtg9RvUYWbnYqG2bgAAAABJRU5ErkJggg=="
+              alt=""
+            />
+            <span class="suggestion-icon_text">Kakao Story</span>
+          </div>
+          <div class="suggestion-icon">
+            <img
+              class="suggestion-icon_img"
+              src="https://t1.kakaocdn.net/kakaocorp/corp_thumbnail/KakaoFriends.png"
+              alt=""
+            />
+            <span class="suggestion-icon_text">Kakao Friends</span>
+          </div>
+          <div class="suggestion-icon">
+            <img
+              class="suggestion-icon_img"
+              src="https://pbs.twimg.com/profile_images/821544394524225537/0Ztf2jK_.jpg"
+              alt=""
+            />
+            <span class="suggestion-icon_text">Kakao Games</span>
+          </div>
+          <div class="suggestion-icon">
+            <img
+              class="suggestion-icon_img"
+              src="https://image.edaily.co.kr/images/Photo/files/NP/S/2016/05/PS16050800387.jpg"
+              alt=""
+            />
+            <span class="suggestion-icon_text">Kakao Hairshop</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <nav class="nav-bar">
+      <ul class="nav-bar_ul">
+        <li class="nav-bar_list">
+          <a class="nav-bar_user" href="friends.html"
+            ><i class="fas fa-user fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav-bar_list">
+          <a class="nav-bar_chat" href="chats.html">
+            <i class="far fa-comment fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav-bar_list">
+          <a class="nav-bar_search" href="find.html"
+            ><i class="fas fa-search fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav-bar_list">
+          <a class="nav-bar_ellipsis" href="more.html"
+            ><div class="ellipsis-notifi"></div>
+            <i class="fas fa-ellipsis-h fa-2x"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <div class="onlymobile onlyportrait">
+      This is only available on portrait
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>friends-kakao</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body id="friends-body">
+    <div id="status-bar">
+      <div class="status-bar_column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar_column">
+        <span>12:03</span>
+      </div>
+      <div class="status-bar_column">
+        <span>50%</span>
+        <i class="fas fa-battery-half fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="screen-header">
+      <h1>Friends</h1>
+      <div class="screen-header-icons">
+        <a href="# "><i class="fas fa-search fa-lg"></i></a>
+        <a href="#"><i class="fas fa-music fa-lg"></i></a>
+        <a href="setting.html"><i class="fas fa-cog fa-lg"></i></a>
+        <a href="index.html"><i class="fas fa-sign-out-alt fa-lg"></i></a>
+      </div>
+    </header>
+
+    <a class="fnd" href="#">
+      <i class="fas fa-info-circle"></i>
+      <span>Friends' Names Display</span>
+      <i class="fas fa-angle-right"></i>
+    </a>
+
+    <main class="main-screen">
+      <div class="user-component">
+        <div class="user-component_column">
+          <img
+            src="image/mepic.png"
+            class="user-component_avatar user-component_avatar-lg"
+            alt=""
+          />
+          <div class="user-component_text">
+            <h4 class="user-component_title"></h4>
+            <!-- <h6 class="user-component_subtitle">
+            Please check My Kakao Account Info
+          </h6> -->
+          </div>
+        </div>
+        <div class="user-component_column"></div>
+      </div>
+
+      <div class="friend-channel">
+        <div class="friend-channel_title">
+          <span>Channel</span>
+          <i class="fas fa-angle-up"></i>
+        </div>
+
+        <div class="user-component user-component-channel">
+          <div class="user-component_column">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAhFBMVEX64QAAAAD/6AD/5QD/6QD/6wB9cACThQC2pAD94wCMfgDw2ABHQAD23QCpmADmzwBpXwCikgDItACZiQB3awDQuwC7qACDdgAhHQBQSAAQDwAcGQArJwAwLABcUwDfyQCwngBjWQDWwQDhywDBrQAWFAAkIQBxZQA2MQAKCQBDPQBdVABVE2GJAAAC/ElEQVR4nO3Z23KiMACA4RyINSBFUDy1VYu6u92+//styEFrqXXazjBh/++mU73JP5CEoBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgI5pZWxQsEbprgfz87QJZvPRQhYWo/ksMP2KVHa4lG8th1Z1Pawfo3W8ku+tYt2T62iSh5a+wkNiuh7cD7B6/kFfYa5t1wP8LhuOrgRKOQodT7Th49VAKR9dT3z6JFDKp66H+C1q/WmglGuHdw0V3xAoZexsoo1uCpQycnUqmvGNhWNHt0W7aRIW/j7LZvXGOM6yydvEjZsXUQ3qgK1W2lrtCf/478Co4dvCgaMzsR7/TgmrVHFiMrOyR18Uyq6H+iU6rUafaaGiyXQaB1qYSXth6uIzuCpvSXnnlV1lh1rUhYfFWaHv4m3qPZeDD4Xe1iGR9uJj4XYaKBX6TeGz1/Vwv8AcjmNf52NvTofz3WZ/XFcipfNThbmrvzi4uF+Y+v6z2cWkywutTYaBFV7zmcOF+UF+/75QFWeqwHq/e1B4p2z6rrD86F4rvweFY0+ETdvInw9Ou4Xzhb/Ksec7RPOMlpliz28pXLq4lta7xVCJerrlxySzbC108rFNVVvBIbRC7V8Ph3HqCZXI1sKZi880OqknX77z6fy5VOV/ItleGDh5uGgWmD+RKV4aWm3KVXVgvLLQM1Xh2sVpmE/EabOGTpNAhMG+emszTtPjHeynaTVB9y7epPk1251vgm3v9WtPLq4zhbOLeF3i5iXMhS83Bbr6mkacHYKvWrn81vvyfUyrjbP3aMFsPw1MXF1mKt7l0elS6nhgfqPurv369LBzPjC/ipOPAwfu/0AqTk/g7/3N3HxYu/RR4XNq+nABRXvhy3gbeE5vEudOhWmQDbf322EWKa8XE7BSF67D4teZgu1RXaEqjL2edZ0cC1c9WTZbFYWvYW+WlRbKl7G7x6Nb2E3Wgyezq/q2dAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4T/wDX0IdACH/NfgAAAAASUVORK5CYII="
+              class="user-component_avatar user-component_avatar-sm"
+              alt=""
+            />
+            <div class="user-component_text">
+              <h4 class="user-component_title">Channel</h4>
+              <!-- <h6 class="user-component_subtitle">
+              Please check My Kakao Account Info
+            </h6> -->
+            </div>
+          </div>
+          <div class="user-component_column">
+            <div><span>2</span> <i class="fas fa-angle-right"></i></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="friend-channel friend-friend">
+        <div class="friend-channel_title">
+          <span>Friends</span>
+          <i class="fas fa-angle-down"></i>
+        </div>
+
+        <div
+          class="user-component user-component-channel user-component-friend"
+        >
+          <div class="user-component_column">
+            <img
+              src="https://file3.instiz.net/data/cached_img/upload/2019/08/04/22/c4f88a55eb025afce6336a3b32baeaca.jpg"
+              class="user-component_avatar user-component_avatar-sm"
+              alt=""
+            />
+            <div class="user-component_text">
+              <h4 class="user-component_title">1feels</h4>
+              <!-- <h6 class="user-component_subtitle">
+              Please check My Kakao Account Info
+            </h6> -->
+            </div>
+          </div>
+          <div class="user-component_column">예뻤어...</div>
+        </div>
+        <div
+          class="user-component user-component-channel user-component-friend"
+        >
+          <div class="user-component_column">
+            <img
+              src="https://mblogthumb-phinf.pstatic.net/MjAyMDAzMDhfOTkg/MDAxNTgzNjQwOTIwODc4.efdfVVkLXAR18aKYNSHbb-uKa-tgSLu-1DWUt9DP-6Ig.7IB4DsN1KEhyvC6CbLiXRTdoOLvIieL4DL2N4nuDfxog.JPEG.dudtjdu/NaverBlog_20200308_131520_40.jpg?type=w2"
+              class="user-component_avatar user-component_avatar-sm"
+              alt=""
+            />
+            <div class="user-component_text">
+              <h4 class="user-component_title">marklee</h4>
+              <!-- <h6 class="user-component_subtitle">
+              Please check My Kakao Account Info
+            </h6> -->
+            </div>
+          </div>
+          <div class="user-component_column">막걸리</div>
+        </div>
+        <div
+          class="user-component user-component-channel user-component-friend"
+        >
+          <div class="user-component_column">
+            <img
+              src="https://pm1.narvii.com/6887/79ed454060f431d0f518924036b9b94ae7f00f19r1-900-1200v2_hq.jpg"
+              class="user-component_avatar user-component_avatar-sm"
+              alt=""
+            />
+            <div class="user-component_text">
+              <h4 class="user-component_title">jendeuk</h4>
+              <!-- <h6 class="user-component_subtitle">
+              Please check My Kakao Account Info
+            </h6> -->
+            </div>
+          </div>
+          <div class="user-component_column">the show is coming !!!</div>
+        </div>
+      </div>
+    </main>
+
+    <nav class="nav-bar">
+      <ul class="nav-bar_ul">
+        <li class="nav-bar_list">
+          <a class="nav-bar_user" href="friends.html"
+            ><i class="fas fa-user fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav-bar_list">
+          <a class="nav-bar_chat" href="chats.html">
+            <div class="chat-notifi badge">3</div>
+            <i class="far fa-comment fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav-bar_list">
+          <a class="nav-bar_search" href="find.html"
+            ><i class="fas fa-search fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav-bar_list">
+          <a class="nav-bar_ellipsis" href="more.html"
+            ><div class="ellipsis-notifi"></div>
+            <i class="fas fa-ellipsis-h fa-2x"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <!-- <div id="splash"><i class="fas fa-comment"></i></div> -->
+    <div class="onlymobile onlyportrait">
+      This is only available on portrait
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+.fa-comment-alt {
+  font-size: 1.7rem;
+}
+.neukkimpyo {
+  border: 1px rgb(243, 52, 18) solid;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  color: rgb(243, 52, 18);
+  font-weight: 600;
+  margin-left: 5px;
+  font-size: 0.7rem;
+}
+.user-component_more .user-component_subtitle {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.main-screen_more .icon-row {
+  margin-top: 20px;
+}
+.icon-row2 {
+  width: 42.5%;
+}
+
+/* suggestion */
+.suggestion {
+  border-top: var(--border);
+  margin-top: 30px;
+  padding-top: 20px;
+}
+.suggestion-title {
+  margin-bottom: 20px;
+}
+.suggestion-icon_img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  object-fit: cover;
+  transition: transform 0.7s;
+}
+.suggestion-icon_img:hover {
+  transform: translateY(10px) scale(2);
+}
+.suggestion-icons {
+  display: flex;
+}
+.suggestion-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+}
+.suggestion-icon_text {
+  color: var(--gray);
+  font-size: 0.9rem;
+}
+#more-body .fa-ellipsis-h {
+  color: var(--blue);
+}

@@ -1,0 +1,29 @@
+.alt-header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+.alt-header h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.alt-header > * {
+  width: 33.333%;
+}
+.alt-header > :nth-child(2) {
+  text-align: center;
+}
+.alt-header > :last-child {
+  text-align: end;
+}
+
+.alt-header div a {
+  margin-left: 5px;
+}
+/* .setting-header > :first-child {
+    margin-right: auto;
+  }
+  .setting-header > :last-child {
+    margin-left: auto;
+  } */

@@ -1,0 +1,44 @@
+.user-component,
+.user-component_column {
+  display: flex;
+  align-items: center;
+}
+
+.user-component {
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.user-component_avatar {
+  /* 사진이 라지 미디움 스몰 있는데 , 미디움으로 만들어서 나중에 수정한다 */
+  /* 라지는 70 미디움은 60 스몰은 50 */
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 25px;
+  margin-right: 15px;
+}
+.user-component_title {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+/* 이름 - 채팅 사이에서 채팅  */
+.main-screen .user-component_subtitle {
+  margin-top: 7px;
+  opacity: 0.5;
+  font-size: 0.9rem;
+}
+
+.user-component_avatar-lg {
+  width: 70px;
+  height: 70px;
+}
+.user-component_column:last-child {
+  display: flex;
+  flex-direction: column;
+}
+.user-component_time {
+  margin-bottom: 5px;
+  opacity: 0.5;
+  font-size: 0.9rem;
+}

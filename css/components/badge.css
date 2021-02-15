@@ -1,0 +1,38 @@
+.badge {
+  background: tomato;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .badge {
+  animation: movingdot 3s ease-in-out infinite;
+}
+
+@keyframes movingdot {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-5px) rotateY(360deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+/* 하반다 점점점 위에 작은 점  */
+.ellipsis-notifi {
+  width: 5px;
+  height: 5px;
+  background: tomato;
+  border-radius: 50%;
+  position: absolute;
+  left: 30px;
+}
+
+.nav-bar_ellipsis {
+  position: relative;
+}

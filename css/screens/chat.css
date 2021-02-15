@@ -1,0 +1,228 @@
+.fa-grip-lines {
+  margin-left: 10px;
+}
+.header-chat1feel div a {
+  color: black;
+}
+
+/* 모든 바디 배경이 똑같은데 , 특정 화면에서 바디 배경으 다르게 하고 싶으면 */
+/* 특정 html body값에 id를 줘라  */
+#chat-with-1feel {
+  background: rgb(180, 223, 228);
+}
+/* #chat-with-1feel #status-bar {
+  background: rgb(171, 193, 209);
+} */
+
+/* header 고정하고 , 중간에 그대로 두는거  */
+/* 방법 1 */
+/* .header-chat1feel {
+  position: fixed;
+  margin: 20px auto;
+  left: 0;
+  right: 0;
+} */
+/* 방법2 */
+.header-chat1feel {
+  position: fixed;
+  top: 0;
+  /* position fixed 주면 width가 리셋되서 컨텐츠 크기 만큼 작아지고 , 위드를 다시 지정해 줘야 하는구나 */
+  width: 100%;
+  box-sizing: border-box;
+  background: rgb(180, 223, 228);
+}
+#chat-with-1feel #status-bar {
+  background: rgb(180, 223, 228);
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.main-screen_chating {
+  margin-top: 95px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* animation: fadein 1s linear; */
+}
+.whatsthedate {
+  color: white;
+  font-weight: 600;
+  font-size: 0.8rem;
+  background: rgb(146, 164, 178);
+  padding: 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  opacity: 0.5;
+}
+/* message row */
+@keyframes fademessage {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.message-row {
+  width: 100%;
+  display: flex;
+  margin-bottom: 15px;
+  animation: fademessage 1s linear;
+}
+.message-row img {
+  width: 40px;
+  height: 40px;
+  border-radius: 13px;
+  margin-right: 10px;
+}
+.fromwho {
+  color: var(--gray);
+  margin-bottom: 7px;
+  /* span 은 inline 이니까 */
+  display: block;
+}
+.whosay {
+  background: rgb(122, 200, 206);
+  padding: 7.5px;
+  border-radius: 15px;
+  border-top-left-radius: 0;
+  margin-right: 5px;
+}
+.message-message {
+  display: flex;
+  align-items: flex-end;
+}
+.message-time {
+  color: var(--gray);
+  font-size: 0.8rem;
+  margin-right: 5px;
+}
+/* message-row-from-me */
+@keyframes faderow {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.message-row-from-me {
+  justify-content: flex-end;
+  animation: faderow 1s linear;
+}
+.message-row-from-me .whosay {
+  background: rgb(92, 188, 196);
+  color: black;
+  border-top-right-radius: 0;
+  border-top-left-radius: 15px;
+}
+
+/* 방법 1 */
+/* .message-row-from-me .message-message {
+  flex-direction: row-reverse;
+} */
+
+/* 방법2 */
+.message-row-from-me .whosay {
+  order: 1;
+}
+/* form */
+.typing {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: rgb(92, 188, 196);
+  position: fixed;
+  bottom: 0;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  transition: all 0.5s;
+}
+.typing-column:first-child {
+  width: 10%;
+  text-align: end;
+}
+.typing-column:last-child {
+  width: 90%;
+  position: relative;
+  text-align: end;
+}
+.typing .typing-column:last-child input {
+  width: 90%;
+  padding: 8px;
+  background: rgb(180, 223, 228);
+  border: var(--border);
+  border-radius: 20px;
+  transition: transform width background 0.5s;
+}
+
+/* emoticons */
+.typing .typing-column:last-child a i {
+  font-size: 1.5rem;
+  position: absolute;
+  right: 45px;
+  top: 5px;
+}
+.typing .typing-column:last-child button {
+  background: rgb(92, 188, 196);
+  width: 30px;
+  height: 30px;
+  border: var(--border);
+  border-radius: 50%;
+}
+.typing .typing-column:last-child a,
+.typing .typing-column:last-child button {
+  position: absolute;
+  right: 5px;
+  top: 1.5px;
+}
+.typing a i {
+  color: var(--gray);
+}
+.typing .typing-column:last-child button:active,
+.typing .typing-column:last-child button:focus,
+.typing .typing-column:last-child button:hover {
+  outline: none;
+  cursor: pointer;
+}
+/*  */
+.typing .typing-column:first-child,
+.typing .typing-column:last-child a,
+.typing .typing-column:last-child button {
+  transition: opacity 0.5s;
+}
+.typing:focus-within .typing-column:first-child,
+.typing:focus-within .typing-column:last-child a,
+.typing:focus-within .typing-column:last-child button {
+  opacity: 0;
+}
+.typing:focus-within .typing-column:last-child input {
+  /* transform: translateX(-30px) scale(1.2, 1); */
+  transform: translateX(-50px) translateY(-80px);
+  width: 95vw;
+  background: rgb(92, 188, 196);
+}
+
+.typing:focus-within {
+  transform: translateY(80px);
+}
+/*  */
+.fa-angle-left {
+  transition: color 0.3s;
+}
+.fa-angle-left:hover {
+  color: var(--blue);
+}

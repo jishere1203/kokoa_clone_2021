@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>welcome-kakao</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body id="index-body">
+    <div id="status-bar">
+      <div class="status-bar_column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar_column">
+        <span>12:03</span>
+      </div>
+      <div class="status-bar_column">
+        <span>50%</span>
+        <i class="fas fa-battery-half fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="welcome-header">
+      <h1>Welcome to KakaoTalk</h1>
+      <p>If you have a Kakao Account, log in with your email or number.</p>
+    </header>
+
+    <!-- 아이디나 비밀번호등 개인정보는 꼭 post로  -->
+    <!-- 구글에서 검색한 단어가 주소에 뜨는건 get 으로  -->
+    <form action="friends.html" method="get" id="login-form">
+      <input
+        name="user-id"
+        type="text"
+        required
+        placeholder="Email or phone number"
+        class=""
+      />
+      <input
+        name="user-password"
+        type="password"
+        required
+        placeholder="Password"
+        class=""
+      />
+      <!-- botton 또는 submit -->
+      <input type="submit" placeholder="Log In" value="Log In" class="" />
+      <input type="submit" placeholder="Sign Up" value="Sign Up" class="" />
+      <a href="#">Find Kakao Account or Password</a>
+    </form>
+    <!-- <div id="splash"><i class="fas fa-comment"></i></div> -->
+    <img
+      class="splash-mepic"
+      src="https://wallpaperaccess.com/full/674569.jpg"
+      alt=""
+    />
+    <!-- <div class="onlymobile">This is only available on mobile</div> -->
+    <div class="onlymobile onlyportrait">
+      This is only available on portrait
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

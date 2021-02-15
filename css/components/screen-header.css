@@ -1,0 +1,33 @@
+.screen-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-top: 20px;
+  /* position: fixed; */
+}
+.screen-header h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.screen-header i {
+  margin-left: 20px;
+  color: rgb(58, 57, 57);
+  transition: color 0.3s;
+}
+
+.screen-header i:hover {
+  color: var(--blue);
+  animation: spinbtn 1s linear infinite;
+}
+
+@keyframes spinbtn {
+  from {
+    transform: none;
+  }
+
+  to {
+    transform: rotate(1turn);
+  }
+}

@@ -1,0 +1,55 @@
+/* 니코쌤 */
+.nav-bar_ul {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-bar {
+  background: rgb(92, 188, 196);
+  padding: 15px 60px;
+  border-top: var(--border);
+  /* 여기부터 */
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  box-sizing: border-box;
+  /* 여기까지 position fixed */
+}
+.nav-bar a {
+  transition: all 0.5s;
+}
+/* i 태그 위에 a 태그가 있는데
+a 태그 색상을 회색으로 skyles.css 에 작성해쓴데
+i태그에 색상을 줘도
+그 위에 a 태그가 회색으로 덮여져 있어서
+i태그가 아니라 a 태그에 컬러를 준다 ▼ */
+.nav-bar a:hover {
+  color: var(--blue);
+}
+/* 내꼬 */
+/* .nav-bar_ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.nav-bar {
+  background: gray;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+} */
+
+/* chat 위에 알림 1  */
+.nav-bar_chat {
+  position: relative;
+}
+
+.chat-notifi {
+  /* position absolute는 위에겹쳐진다  */
+  /* 부모태그에 position relative 해준다 */
+  position: absolute;
+  left: 20px;
+}

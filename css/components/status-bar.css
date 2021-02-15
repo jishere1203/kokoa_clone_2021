@@ -1,0 +1,48 @@
+#status-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 3px;
+  /* 여기부터  */
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  top: 0px;
+  /* background: white; */
+  /* 여기까지 position fixed */
+}
+.status-bar_column:first-child span {
+  margin-right: 5px;
+}
+
+/* display flex , justify content space between 
+  해도 중앙에 안 올때 할 수 있는 방법 두가지 */
+
+/* 첫번째 */
+/* .status-bar_column {
+    width: 33.333%;
+  }
+  .status-bar_column:nth-child(2) {
+    text-align: center;
+  }
+  .status-bar_column:nth-child(3) {
+    text-align: end;
+  } */
+
+/* 두번째 */
+.status-bar_column {
+  width: 33.333%;
+}
+.status-bar_column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+.status-bar_column:nth-child(3) {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* 배터리 양옆에 여백 */
+.status-bar_column .fa-battery-half {
+  margin: 0px 5px;
+}

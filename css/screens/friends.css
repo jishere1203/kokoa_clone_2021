@@ -1,0 +1,63 @@
+.fnd {
+  background: rgb(180, 223, 228);
+  /* a 태그는 inline 이니까 
+  전체를 쓰지 않으니까 
+  displat block 으로 하고 */
+  display: block;
+  /* displat block 인 애들은 text align 으로 중간에 둘 수 있다  */
+  text-align: center;
+  padding: 13px 0px;
+  /* width height 값을 지정하지 않고도
+  padding 만으로도 블록 크기를 다르게 할 수 있다 */
+  margin-bottom: 10px;
+}
+
+.fnd i {
+  opacity: 0.5;
+}
+.fnd span {
+  color: rgb(58, 57, 57);
+  margin: 0px 5px;
+}
+.fnd span:hover {
+  color: var(--blue);
+}
+#friends-body .nav-bar_user {
+  color: var(--blue);
+}
+
+.friend-screen {
+  padding: 0px var(--horizontal-space);
+}
+
+/* friend-channel */
+
+.friend-channel {
+  border-top: var(--border);
+  margin-top: 15px;
+  padding-top: 10px;
+}
+.friend-channel_title {
+  opacity: 0.5;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.user-component_avatar-sm {
+  width: 50px;
+  height: 50px;
+  border-radius: 20px;
+}
+.user-component-channel .user-component_column:last-child {
+  opacity: 0.5;
+}
+.user-component-channel .user-component_column:last-child i {
+  margin-left: 5px;
+}
+.user-component-channel .user-component_title {
+  font-weight: 400;
+}
+/* friend-friend */
+.user-component-friend {
+  margin-bottom: 10px;
+}
